@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <main class="flex justify-center items-center w-3/4 mx-auto h-screen">
+      <div class="border p-4 rounded-3xl">
+        <div>
+          <h1 class="text-center text-5xl font-extrabold">Tic Tac Toe</h1>
+          <p class="text-center">Every gamer's lust...</p>
+        </div>
+        <div class="my-10">
+          <input
+            type="text"
+            placeholder="player 1, eg: John Doe"
+            required
+            id="p1"
+            class="border-2 bg-transparent p-1 w-full rounded-md"
+          />
+          <input
+            type="text"
+            placeholder="player 2, eg: Vincenzo Cassanno"
+            required
+            id="p2"
+            class="border-2 bg-transparent p-1 w-full rounded-md"
+          />
+          <br />
+          <br />
+          <button
+            onclick="startGame()"
+            type="submit"
+            class="bg-blue-500 w-full p-1 rounded-md font-bold"
+          >
+            Start
+          </button>
+          <div class="message text-red-500"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

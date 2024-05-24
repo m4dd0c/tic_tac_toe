@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <!-- pause and mute buttons -->
+    <nav class="fixed">
+      <div class="p-4">
+        <button class="mr-2 hover:text-red-500" onclick="restartGame()">
+          <i class="fa fa-repeat" style="font-size: 36px"></i>
+        </button>
+        <button class="ml-4 hover:text-blue-500" onclick="home()">
+          <i class="fa fa-home" style="font-size: 36px"></i>
+        </button>
+      </div>
+      <div class="p-4">
+        <h1 class="font-bold text-lg uppercase pl-1">Scoreboard</h1>
+        <h2 class="bg-red-500 px-1" id="score-p1">John Doe - 04</h2>
+        <h2 class="bg-blue-500 px-1" id="score-p2">Kyle Jenner - 04</h2>
+        <h2 class="bg-gray-500 px-1" id="score-draw">Draw - 02</h2>
+
+      </div>
+    </nav>
+
+    <!-- playground -->
+    <main class="h-screen flex justify-evenly items-center flex-col">
+      <section class="sec1">
+        <h6 class="bg-red-500 px-2 text-lg font-bold p1-label">
+          Manish - <i class="fa fa-circle-o"></i>
+        </h6>
+      </section>
+      <section class="sec2">
+        <div class="board rounded-xl cursor-pointer" id="board">
+          <div class="row1 flex justify-center items-center">
+            <div class="col col1 h-24 w-24 grid place-items-center"></div>
+            <div
+              class="col border-l-2 border-r-2 col2 h-24 w-24 grid place-items-center"
+            ></div>
+            <div class="col col3 h-24 w-24 grid place-items-center"></div>
+          </div>
+          <div
+            class="row2 border-b-2 border-t-2 flex justify-center items-center"
+          >
+            <div class="col col4 h-24 w-24 grid place-items-center"></div>
+            <div
+              class="col border-l-2 border-r-2 col5 h-24 w-24 grid place-items-center"
+            ></div>
+            <div class="col col6 h-24 w-24 grid place-items-center"></div>
+          </div>
+          <div class="row3 flex justify-center items-center">
+            <div class="col col7 h-24 w-24 grid place-items-center"></div>
+            <div
+              class="col border-l-2 border-r-2 col8 h-24 w-24 grid place-items-center"
+            ></div>
+            <div class="col col9 h-24 w-24 grid place-items-center"></div>
+          </div>
+        </div>
+      </section>
+      <section class="sec3">
+        <h6 class="bg-blue-500 px-2 font-bold text-lg p2-label">
+          Nitesh - <i class="fa fa-times"></i>
+        </h6>
+      </section>
+    </main>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
