@@ -121,6 +121,9 @@ const init = () => {
   board.classList.add(turn.color);
   //counter
   counter = 0;
+
+  // setup localStorage
+  localStorage.setItem("score", JSON.stringify(score));
 };
 
 const checkWin = () => {
