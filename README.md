@@ -8,7 +8,7 @@
 ## Overview
 
 - This project involves developing a web application game using HTML CSS AND JAVASCRIPT.
-- the game is a Tic Tac Toe clone.
+- The project is a nonstop TicTacToe game.
 - [live](https://tictactoe-m4dd0x.netlify.app/)
 
 ## Installation
@@ -21,4 +21,3 @@
 - [HTML](#HTML)
 - [Localstorage](#localstorage)
 - [Javascript](#javascript)
-# tic_tac_toe
